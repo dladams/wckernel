@@ -1,2 +1,2 @@
-# wckernel
-View and generate fcl for wirecell TPC field response maps.
+# wckernel-py
+View and generate fcl for wirecell TPC field response maps in python.
