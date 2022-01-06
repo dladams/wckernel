@@ -5,6 +5,7 @@
 #
 # Class to view and create fcl for wirecell TPC field response maps.
 
+
 import json
 import numpy as np
 
@@ -39,6 +40,9 @@ class WcReponseMap:
                 self.resp[ipla][ipat] = path['PathResponse']['current']['array']['elements']
     def __getitem__(self, ipla):
         return self.response(ipla)
+
+    def __len__(self):
+        return self.nplane()
 
     def nplane(self):
         """Return the number of planes."""
